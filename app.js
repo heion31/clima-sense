@@ -108,22 +108,20 @@ const humidityImg = document.querySelector(".humidity-card img");
 const pressureImg = document.querySelector(".pressure-card img");
 
 switchMode.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
 
-    if (windImg.src.includes('wind-dark.png')) {
-        windImg.src = 'images/wind-light.png';
-    } else {
-        windImg.src = 'images/wind-dark.png'
-    }
+    // Toggle wind image
+    windImg.src = windImg.src.includes('wind-dark.png') 
+    ? 'images/wind-light.png' 
+    : 'images/wind-dark.png';
 
-    if (humidityImg.src.includes('humidity-dark.png')) {
-        humidityImg.src = 'images/humidity-light.png';
-    } else {
-        humidityImg.src = 'images/humidity-dark.png'
-    }
+    // Toggle humidity image
+    humidityImg.src = humidityImg.src.includes('humidity-dark.png') 
+    ? 'images/humidity-light.png' 
+    : 'images/humidity-dark.png';
 
-    if (pressureImg.src.includes('pressure-dark.png')) {
-        pressureImg.src = 'images/pressure-light.png';
-    } else {
-        pressureImg.src = 'images/pressure-dark.png'
-    }
+    // Toggle pressure image
+    pressureImg.src = pressureImg.src.includes('pressure-dark.png') 
+    ? 'images/pressure-light.png' 
+    : 'images/pressure-dark.png';
 });

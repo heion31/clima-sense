@@ -99,12 +99,13 @@ body {
 
     .search-not-found {
         text-align: center;
-        border: 1px solid whitesmoke;
+        border: 2px solid whitesmoke;
         width: 60%;
         margin: 1.2rem auto 0;
         padding: 0.5rem 0;
         border-radius: 1rem;
         display: none;
+        font-weight: 600;
     }
 
 .main {
@@ -128,6 +129,7 @@ body {
 
     .weather-main-info h1 {
         font-size: 1.4rem;
+        text-align: center;
     }
 
     .weather-main-info h2 {
