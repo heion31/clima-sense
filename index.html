@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/weather-icon.png">
+        <title>Clima Sense</title>
+    </head>
+    <body>
+        <div class="weather-container">
+            
+            <div class="header">
+                <p class="current-date"></p>
+                <div class="search-container">
+                    <input class="searchInput" type="text" placeholder="search">
+                    <button class="searchBtn"><img src="./images/search.png"></button>
+                </div>
+            </div>
+
+            <hr>
+            <div class="search-not-found">
+                <p>Your search is not found!</p>
+            </div>
+
+            <div class="main">
+                <div class="main-info">
+                    <div class="weather-main-info">
+                        <h1 class="city-name">Tokyo, JP</h1>
+                        <h2 class="temperature">21c</h2>
+                        <p class="weather-condition">Clouds</p>
+                    </div>
+                    <div>
+                        <img class="weather-img" src="./images/clouds.png">
+                    </div>
+                </div>
+
+                <div class="switch-theme">
+                    <input class="check" type="checkbox" id="switchBtn" />
+                    <label class="switch" for="switchBtn">
+                        <span class="ball"></span>
+                    </label>
+                </div>
+
+                <div class="additional-info">
+                    <div class="wind-card">
+                        <img src="/images/wind-dark.png" alt="">
+                        <p class="wind-speed">23km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                    <div class="humidity-card">
+                        <img src="/images/humidity-dark.png" alt="">
+                        <p class="humidity">64%</p>
+                        <p>Humidity</p>
+                    </div>
+                    <div class="pressure-card">
+                        <img src="images/pressure-dark.png" alt="">
+                        <p class="pressure">1000kMa</p>
+                        <p>Pressure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>☀ Build by Heion ☀</p>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
